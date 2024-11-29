@@ -9,6 +9,12 @@ from models import Users
 
 auth = APIRouter()
 
+
+@auth.get('/healthz')
+def healthz():
+    return {"status":"ok"}
+
+
 @auth.get("/users")
 async def retrieve_all_user():
     return conn.execute(Users.select()).fetchall()
