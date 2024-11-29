@@ -9,6 +9,7 @@ colorama.init()
 origins = [
     "http://localhost:3000",
     "http://localhost:8080",
+    "https://personalarticlebookmark.netlify.app",
 ]
 
 app = FastAPI(docs_url="/api/docs", openapi_url="/api")
