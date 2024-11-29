@@ -23,4 +23,4 @@ app.add_middleware(
 app.include_router(auth, prefix="/api")
 app.include_router(saved_articles_router, prefix="/api")
 
-if __name__ == "__main__": uvicorn.run("server:app", host="localhost", reload=True, port=9999)
+if __name__ == "__main__": uvicorn.run("server:app", host="localhost", reload=True, port=8000)
